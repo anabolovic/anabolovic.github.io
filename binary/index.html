@@ -2,29 +2,7 @@
     <head></head>
     <body>
         <script>
-            const url = require('url')
-            const querystring = require('querystring')
-
-            const routs = {
-                    '/binary': function(res) {
-                    res.writeHead(200, {'Content-Type': 'application/octet-stream'})
-                    var buf = Buffer.alloc(256)
-                    for (var i = 0; i < 256; i++) {
-                        buf[i] = i
-                    }
-                res.end(buf)
-                }
-            }
-
-            module.exports = function(req, res, next) {
-                const path = url.parse(req.url).pathname
-                const route = routes[path]
-                if (route) {
-                    route(res, req)
-                } else {
-                    next()
-                }
-            }
+            
         </script>
     </body>
 </html>
