@@ -18,7 +18,7 @@
 const url = require('url')
 const querystring = require('querystring')
 
-const routes = {
+/* const routes = {
     '/request': function(res, req) {
       res.writeHead(200, {'Content-Type': 'application/json'})
       var data = ''
@@ -149,11 +149,21 @@ const routes = {
     } else {
       next()
     }
-  }
+  } */
+
+  var express = require('express');
+var router = express.Router();
 
 
-http.createServer(handleRequests).listen(80, "https://www.anabolovic.com/");
-console.log('Node.js web server at port 7820 is running..')
+router.get('/hello', function (req, res) {
+      res.writeHead(200, {
+        'Content-Type': 'text/plain',
+        'X-Request-URL': 'http://' + req.headers.host + req.url
+      })
+      res.end('hi')
+    })
+
+	module.exports = router;
 		</script>
 
 		<!-- Wrapper -->
