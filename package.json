@@ -1,0 +1,25 @@
+{
+  "name": "anabolovic.github.io",
+  "version": "1.0.0",
+  "description": "Website portfolio for Ana Bolovic",
+  "main": "karma.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabolovic/anabolovic.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anabolovic/anabolovic.github.io/issues"
+  },
+  "homepage": "https://github.com/anabolovic/anabolovic.github.io#readme",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "querystring": "^0.2.1",
+    "url": "^0.11.0"
+  }
+}
