@@ -1,5 +1,6 @@
 var express = require('express');
-var router = express.Router();
+// import * as express from '/node_modules/express';
+var router = express();
 
 
 router.get('https://www.anabolovic.com/hello', function (req, res) {
@@ -10,4 +11,6 @@ router.get('https://www.anabolovic.com/hello', function (req, res) {
       res.end('hi')
     })
 
-	module.exports = router;
+
+
+router.listen(3000);
